@@ -11,7 +11,7 @@ requires-python = ">=3.8"
 authors = [
     {name = "James Bruce", email = "jab3@korazin.net"}
 ]
-license = {text = "MIT"}
+license = {text = "Apache-2.0"}
 keywords = ["google-docs", "cli", "chatbot", "llm", "gemini", "document-analysis"]
 classifiers = [
     "Development Status :: 3 - Alpha",
