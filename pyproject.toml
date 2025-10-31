@@ -9,7 +9,7 @@ description = "CLI tools for accessing and querying Google Docs from .gdoc files
 readme = "README.md"
 requires-python = ">=3.8"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"}
+    {name = "James Bruce", email = "jab3@korazin.net"}
 ]
 license = {text = "MIT"}
 keywords = ["google-docs", "cli", "chatbot", "llm", "gemini", "document-analysis"]
