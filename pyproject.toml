@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gdoc-tools"
+version = "0.1.0"
+description = "CLI tools for accessing and querying Google Docs from .gdoc files"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+license = {text = "MIT"}
+keywords = ["google-docs", "cli", "chatbot", "llm", "gemini", "document-analysis"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "google-api-python-client>=2.100.0",
+    "google-auth-httplib2>=0.1.1",
+    "google-auth-oauthlib>=1.1.0",
+    "google-generativeai>=0.8.0",
+    "requests>=2.31.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/duluk/gdoc-tools"
+Repository = "https://github.com/duluk/gdoc-tools"
+Issues = "https://github.com/duluk/gdoc-tools/issues"
+
+[project.scripts]
+gdoc = "gdoc_reader:main"
+gdoc-chat = "chat_interactive:main"
+gdoc-example = "example_llm:main"
+
+[tool.setuptools]
+py-modules = ["gdoc_reader", "gdoc_fetcher", "gdoc_processor", "gdoc_llm", "chat_interactive", "example_llm"]
