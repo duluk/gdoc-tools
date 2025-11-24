@@ -83,9 +83,6 @@ python3 test_basic.py
 - Use quotes around filenames with spaces
 - Check the file path is correct
 
-**"Token has been expired or revoked."**
-- Remove the `token.pickle` file and re-authenticate by fetching a document
-
 ## Architecture
 
 The tool is modular and extensible:
