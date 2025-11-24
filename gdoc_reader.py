@@ -127,8 +127,13 @@ Examples:
             )
 
             if args.summarize:
-                from gdoc_processor import summarize_content
-                content = summarize_content(content)
+                from gdoc_llm import analyze_document
+                try:
+                    content = analyze_document(content, analysis_type="summary")
+                except ValueError as e:
+                    print(f"Error: AI summarization requires GEMINI_API_KEY environment variable.", file=sys.stderr)
+                    print(f"Details: {e}", file=sys.stderr)
+                    sys.exit(1)
 
             if args.output:
                 output_path = Path(args.output)
