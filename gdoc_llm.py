@@ -171,8 +171,13 @@ def analyze_document(
 
     # Build prompt based on analysis type
     if analysis_type == "summary":
-        prompt = f"""Provide a concise summary of the following document:
+        prompt = f"""Provide a comprehensive summary of the following document with these specific elements:
 
+1. **Thesis/Main Argument**: What is the central claim or purpose of this document?
+2. **Key Arguments**: What are the main supporting points or arguments presented?
+3. **Conclusion**: What conclusions or implications does the document present?
+
+Document:
 {document_content}
 
 Summary:"""
